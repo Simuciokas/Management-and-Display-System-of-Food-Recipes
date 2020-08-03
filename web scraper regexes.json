@@ -1,0 +1,36 @@
+{
+   "websites":[
+      {
+         "mainURL":"https://www.receptai.lt/",
+         "recipeURL":"https://www.receptai.lt/receptas/--#",
+         "regexes":{
+            "ingredientNames":"\\s*(.*)<\/a><\/b>.*",
+            "ingredientSize":".*<h7 >(.*)<\/h7>.*",
+            "image":".*og:image\" content=\"(.*jpg)\"\/>",
+            "title":".*<title>(.*) - .*"
+         }
+      },
+      {
+         "mainURL":"https://www.delfi.lt/",
+         "recipeURL":"https://www.delfi.lt/d?id=#",
+         "regexes":{
+            "ingredientNames":".*recipeIngredient\">(.*)</span.*",
+            "ingredientSize":".*class=\"amount\">(.*)<\/td>.*",
+            "description":".*<p>(.*)<\/p>.*",
+            "image":".*og:image\" content=\"(.*jpg)\">.*",
+            "title":".*<title>(.*) - .*"
+         }
+      },
+      {
+         "mainURL":"https://www.lamaistas.lt/",
+         "recipeURL":"https://www.lamaistas.lt/receptas/--#",
+         "regexes":{
+            "ingredientNames":"\\s{172,172}(.*)",
+            "ingredientSize":"\\s{84,84}(\d+.*|šiek tiek|pagal poreikį)",
+            "description":".*div class=\"text\">(.*)</div>",
+            "image":".*og:image.*\/(.*\.jpg)\".*",
+            "title":".*<title>(.*) - .*"
+         }
+      }
+   ]
+}
